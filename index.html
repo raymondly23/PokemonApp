@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <title>Angular</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  <script src="/js/module.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/services.js"></script>
+</head>
+<body ng-app='routingApp'>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/2000px-English_Pok%C3%A9mon_logo.svg.png" style='width: 600px; height: 200px' alt="">
+  <hr>
+  <img src="http://i1.wp.com/nintendo-papercraft.com/wp-content/uploads/2014/04/pokeball.png?resize=512%2C376" style='width: 140px; height: 100px'>
+  <span><a ui-sref="home" class='tab-pane'>Home</a></span>
+  <span><a ui-sref="list" class='tab-pane'>List</a></span>
+  <span><a ui-sref="pokemon" class='tab-pane'>Pokemon</a></span>
+  <img src="http://i1.wp.com/nintendo-papercraft.com/wp-content/uploads/2014/04/pokeball.png?resize=512%2C376" style='width: 140px; height: 100px'>
+  <hr>
+
+
+  <ui-view></ui-view>
+
+
+</body>
+</html>
